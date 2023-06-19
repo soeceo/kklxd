@@ -3,8 +3,8 @@
 
 
 rm -rf 1c256.sh
-wget http://down.kangle.one/lxc/1c256.sh
+wget wget https://github.com/soeceo/kklxd/raw/main/1c256.sh
 chmod 777 1c256.sh
 apt install dos2unix -y
 dos2unix 1c256.sh
-./1c256.sh J2J 10
+./1c256.sh 10
