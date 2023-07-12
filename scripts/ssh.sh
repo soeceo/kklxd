@@ -79,9 +79,10 @@ if [ -f "/etc/motd" ]; then
 echo -e " "
 echo -e "\033[31m TG交流群：@iszhuji  \033[0m"
 echo -e " "
-    echo -e "\033[33m 选主机，请记住第一主机\033[0m" >> /etc/motd
-    echo -e "\033[34m 官网:www.zhuji.one\033[0m" >> /etc/motd
+    echo -e "\033[33m 第一主机\033[0m"
+    echo -e "\033[34m 官网:www.zhuji.one\033[0m" 
 	echo -e " "
+ sleep 5s
 fi
 sshport=22
 sudo service iptables stop 2> /dev/null ; chkconfig iptables off 2> /dev/null ;
