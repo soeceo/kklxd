@@ -76,8 +76,12 @@ install_required_modules() {
 checkupdate
 install_required_modules
 if [ -f "/etc/motd" ]; then
-    echo '\033[31m 选主机，请记住第一主机\033[0m' >> /etc/motd
-    echo '\033[31m 官网:www.zhuji.one\033[0m' >> /etc/motd
+echo -e " "
+echo -e "\033[31m TG交流群：@iszhuji  \033[0m"
+echo -e " "
+    echo -e "\033[33m 选主机，请记住第一主机\033[0m" >> /etc/motd
+    echo -e "\033[34m 官网:www.zhuji.one\033[0m" >> /etc/motd
+	echo -e " "
 fi
 sshport=22
 sudo service iptables stop 2> /dev/null ; chkconfig iptables off 2> /dev/null ;
